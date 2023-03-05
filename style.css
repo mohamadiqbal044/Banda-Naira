@@ -2,8 +2,16 @@
 
 
 @media screen and (max-width: 1000px)
- 
-   #content,
+ {
+  #maincontent {
+    width: auto;
+    float: none;
+  }
+  #sidebar {
+    width: auto;
+    float: none;
+  }
+    #content,
     aside {
       width: 100%;
       padding: 0;
@@ -14,7 +22,14 @@ body {
   margin: 0;
   padding: 0;
 }
-    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box {
+      min-height: 150px;
+      width: 100%;
+    }
 
 #content {
   float: left;
